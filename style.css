@@ -115,6 +115,46 @@ svg:hover {
     width: 60px;
 }
 
+
+
+@media screen and (max-width:700px) {
+    body {
+        display: contents;
+        background: #EAEAEA;
+    }
+    
+    header {
+        height: 70px;
+    }
+    
+    .nav-links ul {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        overflow: none;
+    }
+
+    .firstlayer {
+        margin-top: 100px;
+    }
+
+    .socialmedia {
+        margin-top: 0;
+        height: auto;
+        padding: 10px;
+    }
+
+    .socialmedia ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 @media screen and (max-width:500px) {
     body {
         display: contents;
