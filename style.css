@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"poppins" ,Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #EAEAEA;
+    overflow: hidden;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+.logo {
+    height: 30px;
+    margin-left:20px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+ul:last-child {
+    margin-right: 30px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #FF2E63;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+ul li a:hover {
+    color:#252A34 ;
+}
+
+main {
+    background: #252A34;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #EAEAEA;
+    overflow: hidden;
+}
+
+.firstlayer {
+    border:10px solid #EAEAEA;
+    border-radius: 4px 92px 79px 62px;
+    width: fit-content;
+    padding: 10px;
+    transform: rotate(10deg);;
+}
+.secondlayer {
+    background: #08D9D6;
+    border: 10px solid #FF2E63;
+    border-radius: 4px 92px 79px 62px;
+    transform: rotateX(0deg);
+    position: relative;
+}
+.mypicture {
+    height: 200px;
+    border-radius: 4px 92px 79px 62px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#myInfo {
+    color:#08D9D6;
+    text-wrap: wrap;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.socialmedia {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.socialmedia ul{
+    list-style-type: none;
+}
+
+.socialmedia ul li {
+    margin: 20px;
+}
+
+svg {
+    fill:#FF2E63 ;
+    transition: 0.5s;
+}
+
+svg:hover {
+    width: 60px;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        display: contents;
+        background: #EAEAEA;
+    }
+    
+    header {
+        height: 70px;
+    }
+    
+    .nav-links ul {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        overflow: none;
+    }
+
+    .firstlayer {
+        margin-top: 100px;
+    }
+
+    .socialmedia {
+        margin-top: 0;
+        height: auto;
+        padding: 10px;
+    }
+
+    .socialmedia ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
